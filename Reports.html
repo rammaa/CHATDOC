@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>CHATDOC</title>
+<body>
+<nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top shadow mb-3">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>                                   
+            </button>
+           <a class="navbar-brand pr-4" href="index.html"><img src="img/logo.png" width="45px" class=" img-fluid">CHATDOC</a>
+              <div class="collapse navbar-collapse" id="Navbar">      
+                 <ul class="navbar-nav" style="padding-left: 150px;">
+                    <li class="nav-item "><a class="nav-link" href="index.html"><span class="fa fa-address-card fa-lg"></span>&nbsp;Administrator</a></li>
+                     <li class="dropdown">
+                      <a class="nav-link dropbtn"><span class="fa fa-wpforms fa-lg"></span>&nbsp;Form</a>
+                      <div class="dropdown-content">
+                         <a href="patient form.html">Patient Form</a>
+                         <a href ="accumulated form.html"> Accumulated Form</a>
+                         <a href ="prescription form.html">Prescription Form</a>
+                         <a href ="medicine form.html">Medicine Form</a> 
+                         <a href ="Receipt form.html">Receipt Form</a>
+                         <a href="injuiry form.html"> Injuiry Form</a>
+                      </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="paymentmode.html"><span class="fa fa-list fa-lg"></span>&nbsp;Payment Information</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>&nbsp;Reports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>&nbsp;Contect Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-address-card fa-lg"></span>&nbsp;About Us</a></li>
+                </ul>
+          </div>            
+    </div>
+</nav>
+<div id="myDIV" class="headertable">
+  <h2 style="margin:5px">PaymentDetails</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+<div class="container">
+<ul id="myUL">
+  <li>Hit the gym</li>
+  <li class="checked">Pay bills</li>
+  <li>Meet George</li>
+  <li>Buy eggs</li>
+  <li>Read a book</li>
+  <li>Organize office</li>
+</ul>
+</body>
+<style>
+body {
+  margin: 0;
+  min-width: 250px;
+}
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Set all odd list items to a different color (zebra-stripes) */
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+
+
+/* Style the header */
+.headertable {
+  background-color: #00ff80;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.headertable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  border: none;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+</style>
+</head>
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+</html>

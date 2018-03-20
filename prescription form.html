@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>DOCTEQ</title>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+        <div class="container">
+           <div class="navbar-header">
+           <div class="navbar-brand" href="#">CHATDOC</div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>                                   
+            </button>
+              <div class="collapse navbar-collapse" id="Navbar">      
+                <ul class="navbar-nav" style="padding-left: 10px;">
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Doctor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Payment Information</a></li>
+                    <div class="dropdown">
+                      <a class="nav-link dropbtn"><span class="fa fa -wpforms fa-lg"></span>FORM</a>
+                      <div class="dropdown-content">
+                         <a href="patient form.html"> Patient Form</a>
+                         <a href ="accumulated form.html"> Accumulated Receipt entry Form</a>
+                         <a href ="prescription form.html">Prescription Form</a>
+                         <a href ="medicine form.html">Medicine Form</a> 
+                               <a href ="Receipt form.html">Receipt Form</a>
+                                       <a href="injuiry form.html"> Injuiry Form</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-doctor fa-lg"></span>Report</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>CONTACT</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-room fa-lg"></span>ROOM</a></li>
+                    </ul>
+                    <ul class ="navbar-form navbar-right">
+                    </div>
+                    </form>
+              </div>            
+        </div>
+    </nav>
+
+    <div class="container" style="top:20px;">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Form</a></li>
+                <li class="breadcrumb-item active">Prescription Form</li>
+            </ol>
+            <div class="col-12">
+               <h3>Registration</h3>
+               <hr>
+            </div>
+           </div>
+    
+
+        <div class="row row-content">
+           <div class="col-12">
+              <h3 class="headings">Prescription Entry Form</h3>
+           </div>
+            <div class="col-12 col-md-9">
+                <form style="margin-top: 10%">
+                    <div class="form-group row">
+                        <label for="name" class="col-md-2 col-form-label">Registeration Number</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="Registeration Number" name="Registeration Number"placeholder="Enter your name...">
+                        </div>
+                    </div> 
+                       <div class="form-group row">
+                        <label for="name" class="col-md-2 col-form-label">Diagnosis Date</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="Diagnosis Date" name="Diagnosis Date" placeholder="Enter Diagnosis Date...">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="name" class="col-md-2 col-form-label">Provisional Diagnosis</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="medicines Date" name="medicines Date" placeholder="Enter medicines Date...">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="name" class="col-md-2 col-form-label">Consultation Week</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="Consultation Week" name="Consultation Week" placeholder="Consultation Week name...">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="name" class="col-md-2 col-form-label">Reconsultation</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="Reconsultation" name="Reconsultation" placeholder="Enter Reconsultation...">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="name" class="col-md-2 col-form-label">Final Diagonsis</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="Final Diagonsis" name="Final Diagonsis" placeholder="Enter Final Diagonsis...">
+                        </div>
+                    </div>
+                     <div class="form-group row">
+                        <label for="name" class="col-md-2 col-form-label">Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name...">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="fathername" class="col-md-2 col-form-label">Father's Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="fathername" name="fathername" placeholder="Enter your father's name...">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="dob" class="col-md-2 col-form-label">Date of birth</label>
+                        <div class="col-md-10">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                    <input type="text" name="dob" id="dob" value="" class="form-control" placeholder="Date">
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="city" class="col-md-2 col-form-label">City</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="city" name="city" placeholder="Enter your city...">
+                            </input>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="city" class="col-md-2 col-form-label">Address</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address...">
+                            </input>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="mobile" class="col-md-2 col-form-label">Contact No.</label>
+                        <div class="col-7 col-sm-3">
+                           <div class="input-group">
+                              <div class="input-group-addon">+</div>
+                                  <input type="tel" class="form-control" id="contry-code" name="contry-code" placeholder="Contry Code">
+                               <div class="input-group-addon"></div>
+                           </div>
+                        </div>
+                        <div class="col-5 col-sm-7">
+                            <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile no...">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email...">
+                        </div>
+                    </div>
+
+                     <div class="form-group row">
+                        <label for="userid" class="col-md-2 col-form-label">Username</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="userid" name="userid" placeholder="Select a unique username...">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="passid" class="col-md-2 col-form-label">Password</label>
+                        <div class="col-md-10">
+                            <input type="password" class="form-control" id="passid" name="passid" placeholder="Enter password...">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">Sex</div>
+                            <div class="col-sm-10">
+                                <label class="custom-control custom-radio" id="gender">
+                                  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description">Male</span>
+                                </label>
+
+                                <label class="custom-control custom-radio">
+                                  <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description">Female</span>
+                                </label>
+                            </div>
+                    </div>
+            
+
+                        <ul class="nav nav-pills">
+                           <li class="active"><a data-toggle="pill" href="#Tests">Tests</a></li>
+                           <li><a class="nav-item" class="nav-link" data-toggle="pill" href="#menu1">Gastroscopy Test </a></li>
+                           <li><a data-toggle="pill" href="#menu2">Biochemistry Test</a></li>
+                           <li><a data-toggle="pill" href="#menu3">Colonoscopy Test</a></li>
+                           <li><a data-toggle="pill" href="#menu4">Blood Test</a></li>
+                           <li><a data-toggle="pill" href="#menu5">Stool Test</a></li>
+                           <li><a data-toggle="pill" href="#menu6">Sonography Test</a></li>
+                           </ul>
+  
+                          <div class="tab-content">
+                           <div id="Tests" class="tab-pane fade in active">
+                               <h3>Tests</h3>
+                               <p></p>
+                          </div>
+                          <div id="menu1" class="tab-pane fade">
+                          <div class="row row-content">
+                                      <div class="col-12">
+                                          <h3 class="headings">Gastroscopy Test</h3>
+                                      </div>
+                                 <div class="col-4 col-md-8 col-md-12">
+                                      <form style="margin-top: 20%">
+                                              <div class="form-group row">
+                                                    <label for="Esophagusid" class="col-10-form-label"><strong>Esophagus</strong></label>
+                                                    <input type="text" class="form-control" name="Escophagus">
+                                              </div>
+                                                 <div class="form-group row">
+                                                   <strong>STOMACH</strong><span class ="col-md-1- offset-md-4 offset-md-9  col-form-label"></span><br>
+                                                          <div class="col-md-4">
+                                                              <label for="Fundusid" class="col-4-form-label">Fundus</label>
+                                                              <input type="text" class="form-control" name="Fundus">
+                                                              </div>
+                                
+                                                        <div class="col-md-4">
+                                                          <label for="Corpusid" class="col-4-form-label">Corpus</label>
+                                                           <input type="text" class="form-control" name="Corpus">
+                                                          </div>
+                                            
+                                                         <div class="col-md-4">
+                                                               <label for="Antrumid" class="col-7-form-label">Antrum</label>
+                                                               <input type="text" class="form-control" name="Antrum">
+                                                         </div>
+                                                  </div>
+                                                  <div class="from-group row">
+                                                 <strong>DEUDENUM</strong><span class ="col-md-3- offset-md-6 offset-md-9  col-form-label"></span><br>
+                                                         
+                                                         <div class="col-md-4">
+                                                              <label for="bulbid" class="col-md-3 col-form-label">Blub</label>
+                                                              <input type="text" class="form-control" name="Blub">
+                                                          </div>
+                                                         
+                                                       <div class="col-md-4">
+                                                           <label for="FirstPartid" class="col-md-6 col-form-label">First Part</label>
+                                                           <input type="text" class="form-control" name="First Part">
+                                                           </div>
+                        
+                                                       <div class="col-md-4">
+                                                       <label for="secondpartid" class="col-md-9 col-form-label">Second Part</label>
+                                                       <input type="text" class="form-control" name="Second Part">
+                                                      </div>
+                                                </div>
+                                        </form>
+
+                                      </div>
+                                     </div>
+                                  </div>
+                        
+
+
+
+
+                          <div id="menu2" class="tab-pane fade">
+                                  <div class="row row-content">
+                                      <div class="col-12">
+                                          <h3 class="headings"><strong>Biochemistry test</strong></h3>
+                                      </div>
+                                          <div class="col-4 col-md-8 col-md-12">
+                                            <form style="margin-top: 10%">
+                                                   <div class="form-group row">
+                                                        <strong>Biochemistry</strong><span class ="col-md-1- offset-md-6  col-form-label"></span><br>
+                                                              <div class="col-md-4">
+                                                                <label for="Corpusid" class="col-4-form-label">Gluscose</label>
+                                                                <input type="text" class="form-control" name="Corpus">
+                                                              </div>
+                                            
+                                                              <div class="col-md-4">
+                                                                 <label for="Antrumid" class="col-7-form-label">Glucose R/PP</label>
+                                                                 <input type="text" class="form-control" name="Antrum">
+                                                              </div>
+
+                                                         </div>
+                                                          <div class="form-group row">
+                                                            <strong>RFT</strong><span class ="col-md-1- offset-md-6  col-form-label"></span><br>
+                                                               <div class="col-md-3">
+                                                                   <label for="BloodUreaid" class="col-4-form-label">Blood Urea</label>
+                                                                   <input type="text" class="form-control" name="Blood Urea">
+                                                              </div>
+                                
+                                                               <div class="col-md-3">
+                                                                   <label for="Creatinineid" class="col-4-form-label">Createinine</label>
+                                                                   <input type="text" class="form-control" name="Craetinine">
+                                                               </div>
+                                            
+                                                               <div class="col-md-3">
+                                                                   <label for="Bunid" class="col-7-form-label">BUN</label>
+                                                                   <input type="text" class="form-control" name="BUN">
+                                                               </div>
+                                                        </div>  
+    
+                                                              
+                                                        <div>
+                                                        <div class="form-group row">
+                                                         <strong>Lipid Profile</strong><span class ="col-md-1- offset-md-6  col-form-label"></span><br>
+                                                                                       
+                                                              <div class="col-md-3">
+                                                                   <label for="S.Cholestrolid" class="col-4-form-label">S.Cholestrol</label>
+                                                                   <input type="text" class="form-control" name="S.Cholestrol">
+                                                              </div>
+                                
+                                                               <div class="col-md-3">
+                                                                   <label for="HDLCholestrolid" class="col-4-form-label">HDL Cholestrol</label>
+                                                                   <input type="text" class="form-control" name="HDL Cholestrol">
+                                                               </div>
+                                            
+                                                               <div class="col-md-3">
+                                                                   <label for="LDLCholestrolid" class="col-7-form-label">LDL Cholestrol</label>
+                                                                   <input type="text" class="form-control" name="LDL Cholestrol">
+                                                               </div>
+                                                               <div class="col-md-3">
+                                                                   <label for="VLDLCholestrolid" class="col-4-form-label">VLDL Cholestrol</label>
+                                                                   <input type="text" class="form-control" name="VLDL Cholestrol">
+                                                              </div>
+                                
+                                                               <div class="col-md-3">
+                                                                   <label for="Triglyceridesid" class="col-4-form-label">Triglycerides</label>
+                                                                   <input type="text" class="form-control" name="Triglycerides">
+                                                               </div>
+                                            
+                                                               <div class="col-md-3">
+                                                                   <label for="S.totalLipidid" class="col-7-form-label">S.totalLipid</label>
+                                                                   <input type="text" class="form-control" name="S.totalLipid">
+                                                               </div>
+                                                             </div>                             
+                                                        </div>
+                                                     </form>
+                                                   </div>                                
+                                                </div>                                         
+                                           </div>   
+
+                              <div id="menu3" class="tab-pane fade">
+                                 <div class="row row-content">
+                                      <div class="col-12">
+                                          <h3 class="heading">Colonoscopy test</h3>
+                                       </div>
+                                 <div class="col-12 col-md-9">
+                                       <form style="margin-top: 10%"">
+                                       <div class="form-group row">
+                                             <label for="email" class="col-md-2 col-form-label">ANAL CANAL</label>
+                                                         <input type="text" class="form-control" id="ANAL CANAL" name="ANAL CANAL">
+                                                   </div>
+              
+                                      <div class="form-group row">
+                                           <div class="col-md-3">
+                                             <label for="email" class="col-md-2 col-form-label">RECTUM</label>
+                                                     <input type="text" class="form-control" id="RECTUM" name="RECTUM">
+                                            </div>
+                                            <div class="col-md-3">
+                                              <label for="Sigmoidcolonid" class="col-md-2 col-form-label">SIGMOID COLON</label>
+                                                 <input type="text" class="form-control" id="SIGMOID COLON" name="SIGMOID COLON">
+                                            </div>
+                                      
+                                           <div class="col-md-3">
+                                               <label for="Discending colon" class="col-md-2 col-form-label">DESCENDING COLON</label>
+                                                     <input type="text" class="form-control" id="DESCENDING COLON" name="DESCENDING COLON">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="Splenicflexureid" class="col-md-2 col-form-label">SPLENIC FLEXURE</label>
+                                                 <input type="text" class="form-control" id="SPLENIC FLEXURE" name="SPLENIC FLEXURE">
+                                             </div>
+                                    
+                                            <div class="col-md-3">
+                                                 <label for="Tranversecolon" class="col-md-2 col-form-label">TRANSVERSE COLON</label>
+                                                 <div class="col-md-10">
+                                                  <input type="text" class="form-control" id="TRANSVERSE COLON" name="TRANSVERSE COLON">
+                                            </div>
+                                            </div>
+                                              <div class="form-group row">
+                                                 <label for="email" class="col-md-2 col-form-label">HEPATIC FLEXURE</label>
+                                                  <div class="col-md-10">
+                                                  <input type="email" class="form-control" id="HEPATIC FLEXURE" name="HEPATIC FLEXURE">
+                                             </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                  <label for="email" class="col-md-2 col-form-label">ASCENDING COLON</label>
+                                                  <div class="col-md-10">
+                                                  <input type="email" class="form-control" id="ASCENDING COLON" name="ASCENDING COLON">
+                                                </div>
+                                             </div>
+                                             <div class="form-group row">
+                                                   <label for="email" class="col-md-2 col-form-label">CAECUM</label>
+                                                   <div class="col-md-10">
+                                                   <input type="email" class="form-control" id="CAECUM" name="CAECUM">
+                                                 </div>
+                                            </div>
+                                    <div class="form-group row">
+                                           <label for="email" class="col-md-2 col-form-label">TERMINAL ILEUM</label>
+                                            <div class="col-md-10">
+                                                  <input type="email" class="form-control" id="TERMINAL ILEUM" name="TERMINAL ILEUM">
+                                            </div>
+                                     </div>
+                                     <div class="form-group row">
+                                            <label for="email" class="col-md-2 col-form-label">BIOPSY</label>
+                                                <div class="col-md-10">
+                                                     <input type="email" class="form-control" id="BIOPSY" name="BIOPSY">
+                                                </div>
+                                     </div>
+                                    <div class="form-group row"> 
+                                             <label for="email" class="col-md-2 col-form-label">OPINION</label>
+                                                 <div class="col-md-10">
+                                                     <input type="email" class="form-control" id="OPINION" name="OPINION">
+                                                  </div>
+                                    </div>
+
+                                 </div>
+                             </form>
+                          </div>
+                         </div>
+                        </div> 
+                    
+
+                          <div id="menu4" class="tab-pane fade">
+                                <div class="row row-content">
+                                       <div class="col-12">
+                                          <h3 class="headings">Blood Test</h3>
+                                       </div>
+                                     <div class="col-12 col-md-9">
+                                              <form style="margin-top: 10%">
+                                                      <div class="form-group row"> 
+                                                            DLC<span class ="col-md-1- offset-md-6  col-form-label"></span><br>
+                                                            Neutrophils mg%
+                                                             <span class ="required"></span><br>
+                                                             <select class="selection">
+                                                             <option value=" ">45 </option>
+                                                             <option value=" ">46 </option>
+                                                             <option value=" ">47 </option>
+                                                             <option value=" ">48 </option>
+                                                             <option value=" ">49 </option>
+                                                             <option value=" ">50 </option>
+                                                             <option value=" ">51 </option>
+                                                             <option value=" ">52 </option>
+                                                             <option value=" ">53 </option>
+                                                             <option value=" ">54 </option>
+                                                             <option value=" ">55 </option>
+                                                             <option value=" ">56 </option>
+                                                             <option value=" ">57 </option>
+                                                             <option value=" ">58 </option>
+                                                             <option value=" ">59 </option>
+                                                             <option value=" ">60 </option>
+                                                             <option value=" ">61 </option>
+                                                             <option value=" ">62 </option>
+                                                             <option value=" ">63 </option>
+                                                             <option value=" ">64 </option>
+                                                             <option value=" ">65 </option>
+                                                             <option value=" ">66 </option>
+                                                             <option value" ">67 </option>
+                                                             </select>
+                                                        </div><br>
+                                    
+                                                         <div class="form-group row">
+                                                                <label for="email" class="col-md-2 col-form-label">Lymphocytes</label>
+                                                                <div class="col-md-10">
+                                                                <input type="email" class="form-control" id="Lymphocytes" name="Lymphocytes">
+                                                                </div>
+                                                         </div> 
+                                                        <div class="form-group row">
+                                                                 <label for="email" class="col-md-2 col-form-label">Esoinophil:</label>
+                                                                       <div class="col-md-10">
+                                                                           <input type="email" class="form-control" id="Esoinophil" name="Esoinophil">
+                                                                       </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                                 <label for="email" class="col-md-2 col-form-label">Monocytes:</label>
+                                                                        <div class="col-md-10">
+                                                                              <input type="email" class="form-control" id="Monocytes:" name="Monocytes:">
+                                                                        </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                                  <label for="email" class="col-md-2 col-form-label">Basophils</label>
+                                                                         <div class="col-md-10">
+                                                        <input type="email" class="form-control" id="Basophils" name="Basophils">
+                                                                         </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                                   <label for="email" class="col-md-2 col-form-label">Plateles</label>
+                                                                        <div class="col-md-10">
+                                                                           <input type="email" class="form-control" id="Plateles" name="Plateles">
+                                                                        </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                                   <label for="email" class="col-md-2 col-form-label">Other's</label>
+                                                                        <div class="col-md-10">
+                                                                            <input type="email" class="form-control" id="Plateles" name="Plateles">
+                                                                        </div>
+                                                         </div>
+                       
+                                    </form>
+                                   </div>
+                                </div>
+                             </div>
+
+
+
+                             <div id="menu5" class="tab-pane fade">
+                                    <div class="row row-content">
+                                           <div class="col-12">
+                                               <h3 class="headings">Blood Test</h3>
+                                           </div>
+                                        <div class="col-12 col-md-9">
+                                               <form style="margin-top: 10%">
+                                                     <h3 class="headings">Physical</h3>       
+                                                          <div class="form-group row">
+                                                              <label for="email" class="col-md-2 col-form-label">Color</label>
+                                                                   <div class="col-md-10">
+                                                                        <input type="email" class="form-control" id="Color" name="Color">
+                                                                    </div>
+                                                          </div> 
+                                                           <div class="form-group row">
+                                                               <label for="email" class="col-md-2 col-form-label">Consistency</label>
+                                                                  <div class="col-md-10">
+                                                                       <input type="email" class="form-control" id="Consistency" name="Consistency">
+                                                                  </div>
+                                                           </div>
+                                                           <div class="form-group row">
+                                                               <label for="email" class="col-md-2 col-form-label">Mucus:</label>
+                                                                     <div class="col-md-10">
+                                                                        <input type="email" class="form-control" id="Mucus:" name="Mucus:">
+                                                                     </div>
+                                                           </div>
+                                                          <div class="form-group row">
+                                                               <label for="email" class="col-md-2 col-form-label">Blood</label>
+                                                                    <div class="col-md-10">
+                                                                         <input type="email" class="form-control" id="Blood" name="Blood">
+                                                                            </div>
+                                                          </div>
+                                                        <h3 class="headings">Microscopic</h3>
+                                                           <div class="form-group row">
+                                                                  <label for="email" class="col-md-2 col-form-label">WBCs/HPF:</label>
+                                                                       <div class="col-md-10">
+                                                                    <input type="email" class="form-control" id="WBCs/HPF:" name="WBCs/HPF:">
+                                                                       </div>
+                                                           </div>
+                                                         <div class="form-group row">
+                                                                  <label for="email" class="col-md-2 col-form-label">RBCs/HPF:</label>
+                                                                       <div class="col-md-10">
+                                                                 <input type="email" class="form-control" id="RBCs/HPF:" name="RBCs/HPF:">
+                                                                        </div>
+                                                         </div>
+                                                         <div class="form-group row">
+                                                                  <label for="email" class="col-md-2 col-form-label">Microphages:</label>
+                                                                  <div class="col-md-10">
+                                                                       <input type="email" class="form-control" id="Microphages:" name="Microphages:">
+                                                                  </div>
+                                                         </div>
+                                                  </form>
+                                               </div>
+                                            </div>
+                                         </div>
+                         
+
+
+                                              <div id="menu6" class="tab-pane fade">
+                                                     <div class="row row-content">
+                                                           <div class="col-12">
+                                                               <h3 class="headings"><strong>sonography test</strong></h3>
+                                                            </div>
+                                                      <div class="col-12 col-md-9">
+                                                           <form style="margin-top: 10%">
+                                                        <div>
+                                                             <h3 class="headings">Liver&Gall Bladder</h3>       
+                                                                  <h3 class="headings">Liver</h3>       
+                                                                     <div class="form-group row">
+                                                                          <label for="email" class="col-md-2 col-form-label">SIZE</label>
+                                                                              <div class="col-md-10">
+                                                                                <input type="email" class="form-control" id="Color" name="Color">
+                                                                             </div>
+                                                                      </div>  
+                                                                     <div class="form-group row">
+                                                                          <label for="email" class="col-md-2 col-form-label">ECHOTEXTURE</label>
+                                                                              <div class="col-md-10">
+                                                                                 <input type="email" class="form-control" id="Consistency" name="Consistency">
+                                                                              </div>
+                                                                          </div>
+                                                                     <div class="form-group row">
+                                                                         <label for="email" class="col-md-2 col-form-label">FOCAL PATHHOLOGY</label>
+                                                                              <div class="col-md-10">
+                                                                                   <input type="email" class="form-control" id="Mucus:" name="Mucus:">
+                                                                             </div>
+                                                                     </div>
+                                                                   <div class="form-group row">
+                                                                       <label for="email" class="col-md-2 col-form-label">IBHR</label>
+                                                                     <div class="col-md-10">
+                                                                       <input type="email" class="form-control" id="Blood" name="Blood">
+                                                                     </div>
+                                                                  </div>
+                                                                   <div class="form-group row">
+                                                                       <label for="email" class="col-md-2 col-form-label">PV</label>
+                                                                          <div class="col-md-10">
+                                                                            <input type="email" class="form-control" id="Blood" name="Blood">
+                                                                   </div>
+                                                                  </div>
+                                                                   <div class="form-group row">
+                                                                      <label for="email" class="col-md-2 col-form-label">CBD</label>
+                                                                        <div class="col-md-10">
+                                                                          <input type="email" class="form-control" id="Blood" name="Blood">
+                                                                       </div>
+                                                                   </div>
+                                                                   <h3 class="headings">Gall Bladder</h3>
+                                                                       <div class="form-group row">
+                                                                          <label for="email" class="col-md-2 col-form-label">SIZE:</label>
+                                                                            <div class="col-md-10">
+                                                                              <input type="email" class="form-control" id="WBCs/HPF:" name="WBCs/HPF:">
+                                                                            </div>
+                                                                       </div>
+                                                                   <div class="form-group row">
+                                                                        <label for="email" class="col-md-2 col-form-label">WALL THICKNESS:</label>
+                                                                          <div class="col-md-10">
+                                                                             <input type="email" class="form-control" id="RBCs/HPF:" name="RBCs/HPF:">
+                                                                          </div>
+                                                                    </div>
+                                                                   <div class="form-group row">
+                                                                      <label for="email" class="col-md-2 col-form-label">LUMEN:</label>
+                                                                        <div class="col-md-10">
+                                                                          <input type="email" class="form-control" id="Microphages:" name="Microphages:">
+                                                                   </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                         </div>
+                                         <div id="Madicine" class="header">
+                                              <h2 style="margin:5px">Medicines</h2>
+                                              <input type="text" id="myInput" placeholder="Madicine">
+                                              <span onclick="newElement()" class="addBtn">Add</span>
+                                        </div>
+                                        <div id="myBtnContainer">
+                                        <button class="btn active" onclick="filterSelection('all')"> show medicine</button>
+                                        <button class="btn" onclick="filterSelection('cars')">kk</button>
+                                        <button class="btn" onclick="filterSelection('animals')">kk</button>
+                                        <button class="btn" onclick="filterSelection('fruits')">kk</button> 
+                                        <button class="btn" onclick="filterSelection('colors')">kk</button> 
+                                        </div>
+
+                              <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+                                  <div class="container">
+                                    <div class="filterDiv cars">l</div>
+                                    <div class="filterDiv colors fruits">l</div>
+                                    <div class="filterDiv cars">l</div>
+                                    <div class="filterDiv colors">l</div>
+                                    <div class="filterDiv cars animals">l</div>
+                                    <div class="filterDiv colors">l</div>
+                                    <div class="filterDiv animals">l</div>
+                                    <div class="filterDiv animals">l</div>
+                                    <div class="filterDiv fruits">l</div>
+                                    <div class="filterDiv fruits animals">l</div>
+                                    <div class="filterDiv fruits">l</div>
+                                    <div class="filterDiv fruits">l</div>
+                                    <div class="filterDiv animals">l</div>
+                                  </div>
+                                        <ul id="myUL">
+                                         <tr> 
+                                          <!--When a header is clicked, run the sortTable function, with a parameter,
+                                          0 for sorting by names, 1 for sorting by country: -->
+                                          <th onclick="sortTable(0)">Aceclofenac 100mg</th>
+                                          <th onclick="sortTable(1)">Acetaminophen 325mg</th>   
+                                          <th onclick="sortTable(0)">Tramadol Hydrochloride 37.5mg</th>
+                                          <th onclick="sortTable(0)">Asprin 150 mg</th>
+                                          <th onclick="sortTable(0)">Chlorzoxazone 500mg</th>
+                                        <th onclick="sortTable(0)">Diclofenac 50mg</th>
+                                          <th onclick="sortTable(0)">Paracetamol 325m</th>
+                                          </tr>
+                                        </ul>         
+                                  <div class="form-group row">
+                                    <div class="col-md-3>
+                                       <label class="form-check-label">
+                                          <input type="checkbox" name="approve" class="form-check-input" value="">
+                                             <b>Agree terms and conditions</b>
+                                       </label>
+                                     </div>   
+                                   </div>
+                                 <div class="form-group row">
+                                  <div class="offset-md-2 col-md-6">
+                                     <button type="submit" class="btn btn-primary">
+                                     Submit
+                                  </button>
+                                 </div>
+                               </div>
+                             </div>
+                           </form>    
+                          <div class="col-md-3 hidden-sm-down">
+                              <img class="img-fluid" src="C:\Users\user\Pictures\Saved Pictures/user.jpg">
+                          </div>
+                        </div>
+                       </div>   
+
+        <div class="container">
+            <div class="row ">             
+                <div class="col-5 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address class="address">
+		                   p-6,Jain Garden,Bas badenpura<br>
+		                   Outside Gangapol<br>
+		                   Rajasthan,jaipur<br>
+                      <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                      <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                      <i class="fa fa-envelope fa-lg"></i>: 
+                      <a href="mailto:abhishekcadbury3008@gmail.com">abhishekcadbury3008@gmail.com</a>
+
+		           </address>
+                </div>
+
+                <div class="col col-sm-4 align-self-center">
+                    <div style="text-align:center">
+                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:abhishekcadbury3008@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+           </div>
+
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2018 CHATDOC</p>
+                </div>
+           </div>
+        </div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>CHATDOC</title>
+  </head>
+<body>
+<style>
+body {
+    background-color: lightblue;
+}
+</style>
+ <nav class="navbar navbar-inverse">
+        <div class="container">
+           <div class="navbar-header">
+           <div class="navbar-brand" href="#">CHATDOC</div></a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>                                   
+            </button>
+              <div class="collapse navbar-collapse" id="Navbar">      
+                <ul class="navbar-nav" style="padding-left: 10px;">
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Hospitals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="doctor.html"><span class="fa fa-list fa-lg"></span>Doctors</a></li>
+                    <div class="dropdown">
+                     <li class="nav-link dropbtn"><span class="fa fa -wpforms fa-lg"></span>Appointment</a>
+                     
+                      <div class="dropdown-content">
+                         <a href="appt.html"> Patient Form</a>
+                            <a href="map.html">Map</a>
+                      
+                                    </div>
+                      </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-doctor fa-lg"></span>Tests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span>Report</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactuser.html"><span class="fa fa-room fa-lg"></span>Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-room fa-lg"></span>About Us</a></li>
+                    </ul>
+                    <ul class ="navbar-form navbar-right">
+                    </div>
+                    </form>
+              </div>            
+        </div>
+    </nav>
+               
+                    <!-- The Modal -- >
+                   <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+                   <!-- Modal Content --> 
+                      <form class="modal-content animate">
+                          <div class="imgcontainer">
+                                <img src="C:\Users\user\Pictures\Saved Pictures/user.jpg" alt="admin" class="admin">
+                          </div>
+
+                     <div class="container">
+                         <div class="form form-group row">
+                           <label for="uname"><b>Username</b></label>
+                               <input type="text" placeholder="Enter Username" name="uname" required>
+                                 
+                                 <!-- Password field -->
+                                 <label for="uname"><b>Password</b></label>
+                                 <input type="password" value="PSW" id="myInput">
+                             </div>
+                                 <!-- An element to toggle between password visibility -->                                   
+                                     <button type="submit">Login</button>
+                                    <label>
+                               <input type="checkbox" checked="checked" name="remember"> Remember me
+                           </label>
+                         </div>
+ 
+                                <div class="container" style="background-color:#f1f1f1">
+                                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                            </form>
+                       </div>
+                          <div class="form-group row">
+                              <div class="form-check col-md-6 offset-md-2">
+                                  <label class="form-check-label">
+                                      <input type="checkbox" name="approve" class="form-check-input" value="">
+                                      <b>Agree terms and conditions</b>
+                                  </label>
+                              </div>   
+                           </div>
+              
+                      </form>
+                  </div>
+                </div>
+           </div>
+        </div>
+</div>
+
+
+ 
+         <!-- jQuery first, then Tether, then Bootstrap JS. -->
+         <script src="node_modules/jquery/dist/jquery.min.js"></script>
+         <script src="node_modules/tether/dist/js/tether.min.js"></script>
+         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+         <script src="js/script.js"></script> 
+  </body> 
+ </head>
+</html>
